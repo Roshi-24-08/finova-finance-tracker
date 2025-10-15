@@ -214,27 +214,27 @@ export default function Dashboard() {
         <div className="summary-cards">
           <div className="summary-card income">
             <div className="summary-label">Total Income</div>
-            <div className="summary-value">${summary.income.toFixed(2)}</div>
+            <div className="summary-value">₹{summary.income.toFixed(2)}</div>
           </div>
           <div className="summary-card expense">
             <div className="summary-label">Total Expenses</div>
-            <div className="summary-value">${summary.expense.toFixed(2)}</div>
+            <div className="summary-value">₹{summary.expense.toFixed(2)}</div>
           </div>
           <div className="summary-card savings">
             <div className="summary-label">Savings</div>
-            <div className="summary-value">${summary.savings.toFixed(2)}</div>
+            <div className="summary-value">₹{summary.savings.toFixed(2)}</div>
           </div>
           <div className="summary-card investment">
             <div className="summary-label">Investments</div>
-            <div className="summary-value">${summary.investment.toFixed(2)}</div>
+            <div className="summary-value">₹{summary.investment.toFixed(2)}</div>
           </div>
           <div className="summary-card lent">
             <div className="summary-label">Lent</div>
-            <div className="summary-value">${summary.lent.toFixed(2)}</div>
+            <div className="summary-value">₹{summary.lent.toFixed(2)}</div>
           </div>
           <div className="summary-card borrowed">
             <div className="summary-label">Borrowed</div>
-            <div className="summary-value">${summary.borrowed.toFixed(2)}</div>
+            <div className="summary-value">₹{summary.borrowed.toFixed(2)}</div>
           </div>
         </div>
 

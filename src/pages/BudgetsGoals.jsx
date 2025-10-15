@@ -124,7 +124,7 @@ export default function BudgetsGoals() {
                 <div key={budget.id} className="list-item">
                   <div className="list-item-header">
                     <div className="list-item-title">{budget.category}</div>
-                    <div className="list-item-amount">${parseFloat(budget.amount).toFixed(2)}</div>
+                    <div className="list-item-amount">₹{parseFloat(budget.amount).toFixed(2)}</div>
                   </div>
                   <div className="progress-text" style={{ textTransform: 'capitalize' }}>
                     {budget.period}
@@ -182,13 +182,13 @@ export default function BudgetsGoals() {
                   <div key={goal.id} className="list-item">
                     <div className="list-item-header">
                       <div className="list-item-title">{goal.name}</div>
-                      <div className="list-item-amount">${parseFloat(goal.target).toFixed(2)}</div>
+                      <div className="list-item-amount">₹{parseFloat(goal.target).toFixed(2)}</div>
                     </div>
                     <div className="progress-bar">
                       <div className="progress-fill" style={{ width: `${Math.min(progress, 100)}%` }} />
                     </div>
                     <div className="progress-text">
-                      ${parseFloat(goal.current).toFixed(2)} of ${parseFloat(goal.target).toFixed(2)} (
+                      ₹{parseFloat(goal.current).toFixed(2)} of ₹{parseFloat(goal.target).toFixed(2)} (
                       {progress.toFixed(0)}%)
                     </div>
                     <div className="progress-text">Due: {new Date(goal.due_date).toLocaleDateString()}</div>

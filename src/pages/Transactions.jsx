@@ -260,7 +260,7 @@ export default function Transactions() {
                     <td>{new Date(transaction.date).toLocaleDateString()}</td>
                     <td style={{ textTransform: 'capitalize' }}>{transaction.type}</td>
                     <td>{transaction.category}</td>
-                    <td>${parseFloat(transaction.amount).toFixed(2)}</td>
+                    <td>₹{parseFloat(transaction.amount).toFixed(2)}</td>
                     <td>{transaction.mode || '-'}</td>
                     <td>{transaction.description || '-'}</td>
                     <td>{transaction.counterparty || '-'}</td>

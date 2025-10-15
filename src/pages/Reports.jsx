@@ -118,9 +118,9 @@ Financial Report
 Period: ${summary.period}
 Category: ${summary.category}
 Total Transactions: ${summary.totalTransactions}
-Total Income: $${summary.totalIncome.toFixed(2)}
-Total Expense: $${summary.totalExpense.toFixed(2)}
-Net: $${(summary.totalIncome - summary.totalExpense).toFixed(2)}
+Total Income: ₹${summary.totalIncome.toFixed(2)}
+Total Expense: ₹${summary.totalExpense.toFixed(2)}
+Net: ₹${(summary.totalIncome - summary.totalExpense).toFixed(2)}
 ================
 Generated on: ${new Date().toLocaleString()}
     `.trim();
